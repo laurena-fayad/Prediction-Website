@@ -1,5 +1,7 @@
 let inputName;
-  
+let dog_api =  "https://dog.ceo/api/breeds/image/random"
+let property;
+
 // Defining async function
 async function getapi(url, pProperty) {
     
@@ -13,11 +15,27 @@ async function getapi(url, pProperty) {
 
 // Function to define innerHTML for HTML table
 function show(data, pProperty) {
-    let tab = [`${data[pProperty]}`]
-    // Setting innerHTML as tab variable
-    document.getElementById(pProperty+"-result").innerHTML = tab
+   if (pProperty == "country"){
+        let country_obj = data[pProperty]
+        console.log(country_obj)
+        for (let el = 0; el < country_obj.length; el++){
+            let count = el + 1
+            let nationality = country_obj[el].country_id
+            console.log(nationality);
+            document.getElementById(pProperty+"-result").innerHTML += "Nationality " + count + ":" + country_obj[el].country_id + " "
+        }
+    }else if (pProperty == 'message'){
+        document.getElementById("dog-img").src = data.message
+    }else{
+        let tab = [`${data[pProperty]}`]
+        // Setting innerHTML as tab variable
+        document.getElementById(pProperty+"-result").innerHTML = tab    
+    }
 }
-  
+
+property = 'message';
+getapi(dog_api, property);
+
 window.onkeyup = keyup;
 function keyup(e) {
   inputName = e.target.value;
@@ -30,8 +48,8 @@ document.getElementById("search-btn").addEventListener("click", function(){
         let age_api_url = "https://api.agify.io/?name="+inputName;
         let nationality_api_url = "https://api.nationalize.io/?name="+inputName;
     
-        // Calling that async function
-        let property = 'gender'
+        // Calling that async functions
+        property = 'gender'
         getapi(gender_api_url, property);  
         property = 'age';
         getapi(age_api_url, property);
