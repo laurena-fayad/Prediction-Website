@@ -228,7 +228,7 @@ a {
         font-size: 5.5vw;
     }
     .header-section{
-        height: 50vh;
+        height: 60vh;
     }
 
     .header-text{
@@ -273,6 +273,6 @@ a {
     }
 
     #predictions-section{
-        height: 35vh;
+        height: 40vh;
     }
 }
