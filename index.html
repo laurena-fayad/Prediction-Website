@@ -10,25 +10,28 @@
 
     <body>
 
-        <h1 class="title container">Bassarah</h1>
-        <div class="header container">
-            <div class="header-text">
-                <h1> I can predict your age, gender and nationality.</h1>
-                <p class="dog-text">And here's a cute dog picture. Awh!</p>
-            </div>
-            <div class="header-img"> 
-                <img id="dog-img" src="">
-            </div>
+        <div class="header-section">
+            <h1 class="title container noselect">Bassarah</h1>
+            <div class="header container">
+                <div class="header-text noselect">
+                    <h1> I can predict your age, gender and nationality.</h1>
+                    <p class="dog-text">And here's a cute dog picture. You're welcome.</p>
+                </div>
+                <div class="header-img"> 
+                    <img id="dog-img" src="">
+                </div>
+            </div>    
         </div>
+
         <div class="name-input-section">
             <div class="name-input container">
-                <label for="name">Enter your name</label>
+                <label for="name">Enter your first name</label>
                 <input type="text" id="name" name="name">
-                <button type="button" id="search-btn"> Get Predictions </button>    
+                <a href="#"><button type="button" id="get-predictions-btn">Get Predictions</button></a>  
             </div>
         </div>
 
-        <div class="predictions">
+        <div id="predictions-section">
             <h1 id="prediction-title"> <span id="fname"></span>, you are...</h1>
             <div class="container">
                 <div class="predictions-types">
@@ -49,6 +52,7 @@
                 </div>    
             </div>
         </div>
+        <div id="footer"></div>
 
         <script src="https://kit.fontawesome.com/b2cb8c4ddf.js" crossorigin="anonymous"></script>
         <script src="prediction.js"></script>

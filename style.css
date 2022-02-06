@@ -1,13 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@800&display=swap');
 body{
-    background-color:#fbf7ea;
     margin: 0;
-    padding: 0%;
+    padding: 0;
+}
+
+html {  
+    scroll-behavior: smooth;  
 }
 
 h1{
     margin: 0%;
     padding: 0%;
+}
+
+a {
+    text-decoration: none;
+    margin-top: 3%;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none; 
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+}
+
+/* Header Section Properties */
+
+.header-section{
+    background-color:#fbf7ea;
+    height: 400px;
 }
 
 .header{
@@ -24,6 +48,7 @@ h1{
 .container{
     margin: 0% 10%;
 }
+
 .header-text{
     margin-top: 3%;
     width: 700px;
@@ -33,25 +58,29 @@ h1{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
+
 .title{
     font-family: 'Poppins', sans-serif;
     color:  #fbbd13;
     font-size:40px;
-    margin-top: 3%;
+    padding-top: 2%;
+    margin-bottom: 3%;
 }
 
 #dog-img{
     width:250px;
-    height: 250px;
-    border-radius:50%;
-    border: 15px solid #fbbd13;
+    height: 280px;
+    border-radius:10%;
+    border: 10px solid #fbbd13;
     text-decoration: none;
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,.3);
 }
 
+/* Name Input Section Properties */
+
 .name-input-section{
     background-color: #73c196;
-    height: 350px;
+    height: 320px;
 }
 
 .name-input{
@@ -78,39 +107,43 @@ h1{
     color: #73c196;
     outline: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #name:focus {
     border: 5px solid rgb(218, 218, 218);
 }
 
-#search-btn{
+#get-predictions-btn{
     background-color: #fbbd13;
     border: solid transparent;
     border-radius: 16px;
     border-width: 0 0 4px;
-    color: #fbf7ea;
     display: inline-block;
     font-family: din-round,sans-serif;
     font-size: 21px;
     font-weight: 700;
-    margin-top: 3%;
     padding: 13px 16px;
     text-align: center;
     text-transform: uppercase;
-    transform: translateZ(0);
-    vertical-align: middle;
-    width: 25%;
+    width: 100%;
+    color: #fbf7ea;
 }
 
-#search-btn:hover:not(:disabled){
+#get-predictions-btn:hover:not(:disabled){
     filter: brightness(1.1);
 }
 
-.predictions{
+/* Predictions Section Properties */
+
+#predictions-section{
     background-color: #fbbd13;
     height: fit-content;
+    display: none;
+}
+
+#fname{
+    text-transform: capitalize;
 }
 
 .predictions-types{
@@ -141,4 +174,9 @@ h1{
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+}
+
+#footer{
+    height:50px;
+    background-color: #fbf7ea;
 }
