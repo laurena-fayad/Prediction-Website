@@ -38,7 +38,7 @@ a {
     color:#73c196;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 1.5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -55,7 +55,7 @@ a {
 }
 
 .dog-text{
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -120,7 +120,7 @@ a {
     border-radius: 16px;
     border-width: 0 0 4px;
     display: inline-block;
-    font-family: din-round,sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 21px;
     font-weight: 700;
     padding: 13px 16px;
@@ -186,4 +186,93 @@ a {
     padding-top: 10px;
     text-align: center;
     color:#73c196;
+}
+
+@media (max-width:1120px) {
+    
+    .header {
+        font-size: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center;
+        text-align: center;   
+    }
+
+    .header-section{
+        height: 80vh;
+    }
+
+    .name-input{
+        padding-top: 15%;
+    }
+
+    .name-input-section{
+        height: 60vh;
+    }
+
+    .predictions-types{
+        justify-content: space-between;
+    }
+
+    .dog-text{
+        padding-bottom: 5%;
+        font-size: 2vw;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    h1{
+        font-size: 5.5vw;
+    }
+    .header-section{
+        height: 50vh;
+    }
+
+    .header-text{
+        width:fit-content;
+    }
+
+    .dog-text{
+        font-size: 18px;
+    }
+
+    #dog-img{
+        height:200px;
+        width: 180px;
+    }
+
+    .name-input{
+        padding-top: 28%;
+    }
+
+    .name-input-section{
+        height: 45vh;
+    }
+
+    .prediction-icon{
+        font-size: 70px;
+    }
+
+    .prediction-title{
+        font-size: 14px;
+    }
+
+    .prediction-result{
+        font-size: 16px;
+    }
+    
+    .name-input{
+        font-size:20px ;
+    }
+
+    #get-predictions-btn{
+        font-size: 18px;
+    }
+
+    #predictions-section{
+        height: 35vh;
+    }
 }
