@@ -1,6 +1,6 @@
 let inputName;
-let dog_api =  "https://dog.ceo/api/breeds/image/random"
 let property;
+let dog_api =  "https://dog.ceo/api/breeds/image/random"
 
 // Defining async function
 async function getapi(url, pProperty) {
@@ -15,13 +15,17 @@ async function getapi(url, pProperty) {
 // Function to define innerHTML for HTML table
 function show(data, pProperty) {
    if (pProperty == "country"){
-        document.getElementById(pProperty+"-result").innerHTML =""
+        let count = 1;
         let country_obj = data[pProperty]
-        console.log(country_obj)
-        for (let el = 0; el < country_obj.length; el++){
+        document.getElementById(pProperty+"-result1").innerHTML = " "
+        document.getElementById(pProperty+"-result2").innerHTML = " "
+        document.getElementById(pProperty+"-result3").innerHTML = " "
+        for (let el = 0; el < country_obj.length; el++){    
             let nationality = country_obj[el].country_id
-            console.log(nationality);
-            document.getElementById(pProperty+"-result").innerHTML += country_obj[el].country_id + " "
+            let probability = (country_obj[el].probability)
+            console.log(probability)
+            document.getElementById(pProperty+"-result"+count).innerHTML += (probability*100).toFixed(2) + "%" + " " + nationality
+            count++
         }
     }else if (pProperty == 'message'){
         document.getElementById("dog-img").src = data.message

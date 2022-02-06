@@ -5,8 +5,9 @@ body{
     padding: 0%;
 }
 
-h1, h2{
+h1{
     margin: 0%;
+    padding: 0%;
 }
 
 .header{
@@ -77,11 +78,11 @@ h1, h2{
     color: #73c196;
     outline: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #name:focus {
-    border: 3px solid rgb(6, 49, 5);
+    border: 5px solid rgb(218, 218, 218);
 }
 
 #search-btn{
@@ -109,7 +110,7 @@ h1, h2{
 
 .predictions{
     background-color: #fbbd13;
-    height: 350px;
+    height: fit-content;
 }
 
 .predictions-types{
@@ -136,5 +137,8 @@ h1, h2{
 .prediction-result{
     color: #fbf7ea;
     text-align: center;
-    padding-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
