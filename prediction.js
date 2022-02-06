@@ -16,6 +16,7 @@ async function getapi(url, pProperty) {
 // Function to define innerHTML for HTML table
 function show(data, pProperty) {
    if (pProperty == "country"){
+        document.getElementById(pProperty+"-result").innerHTML =""
         let country_obj = data[pProperty]
         console.log(country_obj)
         for (let el = 0; el < country_obj.length; el++){

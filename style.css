@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@800&display=swap');
+body{
+    background-color:#fbf7ea;
+    margin: 0;
+}
+.header{
+    color:rgb(6, 49, 5);
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.container{
+    margin: 0% 10%;
+}
+.header-text{
+    margin-top: 3%;
+    width: 700px;
+}
+
+.dog-text{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(6, 49, 5);
+    font-size:40px;
+    margin-top: 3%;
+}
+
+#dog-img{
+    width:250px;
+    height: 250px;
+    border-radius:50%;
+    border: 15px solid #fbbd1393;
+    z-index: -1;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.3);
+}
+
+.name-input-section{
+    background-color: #73c196;
+    height: 300px;
+}
+
+.name-input{
+    padding-top: 3%;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#name{
+    text-decoration: none;
+    margin-top: 2%;
+    border-radius: 26.25em;
+    border: none;
+    width: 20em;
+    height: 3.25em;
+}
+
+#search-btn{
+    background-color: #fbbd13;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 3%;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateZ(0);
+    vertical-align: middle;
+    width: 25%;
+}
+
+#search-btn:hover:not(:disabled){
+    filter: brightness(1.1);
+}
+
