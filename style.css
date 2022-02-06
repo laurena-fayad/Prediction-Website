@@ -2,9 +2,15 @@
 body{
     background-color:#fbf7ea;
     margin: 0;
+    padding: 0%;
 }
+
+h1, h2{
+    margin: 0%;
+}
+
 .header{
-    color:rgb(6, 49, 5);
+    color:#73c196;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-size: 22px;
@@ -28,7 +34,7 @@ body{
 }
 .title{
     font-family: 'Poppins', sans-serif;
-    color: rgb(6, 49, 5);
+    color:  #fbbd13;
     font-size:40px;
     margin-top: 3%;
 }
@@ -37,24 +43,24 @@ body{
     width:250px;
     height: 250px;
     border-radius:50%;
-    border: 15px solid #fbbd1393;
-    z-index: -1;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.3);
+    border: 15px solid #fbbd13;
+    text-decoration: none;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,.3);
 }
 
 .name-input-section{
     background-color: #73c196;
-    height: 300px;
+    height: 350px;
 }
 
 .name-input{
     padding-top: 3%;
-    color:white;
+    color:#fbf7ea;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content:center;
     font-size: 30px;
     text-transform: uppercase;
 }
@@ -66,6 +72,16 @@ body{
     border: none;
     width: 20em;
     height: 3.25em;
+    background-color: #fbf7ea;
+    text-align: center;
+    color: #73c196;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#name:focus {
+    border: 3px solid rgb(6, 49, 5);
 }
 
 #search-btn{
@@ -73,7 +89,7 @@ body{
     border: solid transparent;
     border-radius: 16px;
     border-width: 0 0 4px;
-    color: #FFFFFF;
+    color: #fbf7ea;
     display: inline-block;
     font-family: din-round,sans-serif;
     font-size: 21px;
@@ -91,3 +107,34 @@ body{
     filter: brightness(1.1);
 }
 
+.predictions{
+    background-color: #fbbd13;
+    height: 350px;
+}
+
+.predictions-types{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.prediction-icon{
+    font-size: 120px;
+    color: #fbf7ea;
+    margin: 0%;
+}
+
+#prediction-title{
+    color: #fbf7ea;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.prediction-result{
+    color: #fbf7ea;
+    text-align: center;
+    padding-top: 30px;
+}

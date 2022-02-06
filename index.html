@@ -7,11 +7,13 @@
         <title>Bassarah</title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
+
         <h1 class="title container">Bassarah</h1>
         <div class="header container">
             <div class="header-text">
-                <h1> I can predict your age, nationality and gender.</h1>
+                <h1> I can predict your age, gender and nationality.</h1>
                 <p class="dog-text">And here's a cute dog picture. Awh!</p>
             </div>
             <div class="header-img"> 
@@ -25,11 +27,28 @@
                 <button type="button" id="search-btn"> Get Predictions </button>    
             </div>
         </div>
-        <p id="fname"> </p>
-        <p id="gender-result"> </p>
-        <p id="age-result"> </p>
-        <p id="country-result"> </p>
 
-    <script src="prediction.js"></script>
+        <div class="predictions">
+            <h1 id="prediction-title"> <span id="fname"></span>, you are...</h1>
+            <div class="container">
+                <div class="predictions-types">
+                    <div class="age-prediction">
+                        <i class="prediction-icon far fa-id-card"></i>
+                        <h2 class="prediction-result"><span id="age-result"></span> years old</h2>
+                    </div>
+                    <div class="gender-prediction">
+                        <i class="prediction-icon fas fa-venus-mars"></i>
+                        <h2 class="prediction-result" id="gender-result"></h2>
+                    </div>
+                    <div class="nationality-prediction">
+                        <i class="prediction-icon fas fa-globe-asia"></i>
+                        <h2 class="prediction-result" id="country-result"></h2>
+                    </div>    
+                </div>    
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/b2cb8c4ddf.js" crossorigin="anonymous"></script>
+        <script src="prediction.js"></script>
     </body>
 </html>

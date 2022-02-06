@@ -4,7 +4,6 @@ let property;
 
 // Defining async function
 async function getapi(url, pProperty) {
-    
     // Storing response
     const response = await fetch(url);
     
@@ -20,10 +19,9 @@ function show(data, pProperty) {
         let country_obj = data[pProperty]
         console.log(country_obj)
         for (let el = 0; el < country_obj.length; el++){
-            let count = el + 1
             let nationality = country_obj[el].country_id
             console.log(nationality);
-            document.getElementById(pProperty+"-result").innerHTML += "Nationality " + count + ":" + country_obj[el].country_id + " "
+            document.getElementById(pProperty+"-result").innerHTML += country_obj[el].country_id + " "
         }
     }else if (pProperty == 'message'){
         document.getElementById("dog-img").src = data.message
