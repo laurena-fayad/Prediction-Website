@@ -177,6 +177,13 @@ a {
 }
 
 #footer{
-    height:50px;
+    height:60px;
     background-color: #fbf7ea;
+}
+
+#copyright {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    color:#73c196;
 }
